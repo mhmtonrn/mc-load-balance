@@ -12,3 +12,13 @@ eureka:
 
 logging:
   file: target/${spring.application.name}.log
+
+zuul:
+  prefix: /api
+  routes:
+    customer-service:
+      path: /customer/**
+      serviceId : customer-service
+    product-service:
+      path: /product/**
+      serviceId: product-service
