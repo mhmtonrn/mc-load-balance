@@ -1,0 +1,6 @@
+# Project exclude paths
+/customer-service/target/
+/product-service/target/
+/registration-server/target/
+/router/target/
+/target/
